@@ -1,17 +1,17 @@
 # $Id$
 
 pkgname=glacier-calendar
-pkgver=0.0.3
+pkgver=0.1
 pkgrel=1
 pkgdesc="Nemo calendar"
 arch=('x86_64' 'aarch64')
 url="https://github.com/nemomobile-ux/glacier-calendar"
 license=('BSD-3-Clause' 'LGPL-2.1-only')
-depends=('qt5-glacier-app>=0.9'
-	'nemo-qml-plugin-calendar')
-makedepends=('cmake' 'qt5-tools')
+depends=('qt6-glacier-app>=0.9'
+	'nemo-qml-plugin-calendar>=0.7.4')
+makedepends=('cmake' 'qt6-tools')
 source=("${url}/archive/refs/tags/$pkgver.tar.gz")
-sha256sums=('b441c1a0a44f848c2f6fba09a00a4ae39bda878f36ab6a5d3ec9b640d3286cfa')
+sha256sums=('fae1bd7f7715dafb17deaec6c9ef6718d4cdebdf2d231a01819c70fcba699dc7')
 
 build() {
     cd $pkgname-$pkgver
